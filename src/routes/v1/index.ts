@@ -1,9 +1,10 @@
 import Express from "express";
-import authRoutes from '../../routes/v1'
-const router = Express.Router()
+import { authRoutes } from "@/routes/v1/auth";
 
-router.use(authRoutes)
+const router = Express.Router();
 
-export default router
+router.use(authRoutes);
 
-export { router as v1Routes }
+export default router;
+
+export { router as v1Routes };
